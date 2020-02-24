@@ -1,0 +1,195 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Новини.Політика.Погода</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        10
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        
+</head>
+<body>
+
+    <head>
+            <div class="container">
+                 <h1>WEEKEND</h1>
+                            <p id="text"></p>   
+        <p id="text"></p>
+        <div id="usd"></div>
+
+        <!-- <div class=" row dropdown">
+            <a class="btn btn-primary btn1" href="https://www.0362.ua/news" role="button">Новини Рівного</a>
+            <a class="btn btn-primary btn2" href="https://ua.sinoptik.ua/%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0-%D1%80%D1%96%D0%B2%D0%BD%D0%B5" role="button">Погода</a>
+            <a class="btn  btn-primary btn3" href="http://astroscope.ru/horoskop/goroskopi_na_god/2020.html" role="button">Гороскоп</a>
+            <a class="btn btn-primary btn4" href="https://sport.ua/uk" role="button">Спорт</a>
+            <a class="btn btn-primary btn5" href="http://www.anextour.com.ua/" role="button"> Відпочинок</a>
+        </div> -->
+        </div>
+        
+</head>
+
+
+    
+ <main>
+    
+           
+        
+<div class="container">
+ 
+
+        
+
+            <div class="jumbotron col-3">
+                <h2 class="text-center" style="font-family:Open Sans;font-size:32px !important;color:#faee82;"></h2>
+                <p>Сьогодні: <strong><span id="date" style="font-family:Open Sans;font-size:22px !important;color: blue;"></span></strong></p>
+                <p> Час: <strong>    <div class="clock">
+                  <p id="clock"></p>
+                  </div><span id="time" style="color:#ffffff;text-shadow: 0 0 5px #070707;font-family:Open Sans;font-size:22px !important;"></span></strong></p>
+              </div>
+
+          <div class=" col-12 well" id="city">
+            <h2 class="text-center" style="font-family:Open Sans;font-size:32px !important;color:#faee82;">Погода</h2>
+            <p class="text-center data-item" id="city-text"></p>
+            <p class="text-center data-item" id="city-text2"></p>
+           <p class="text-center data-item" id="city-text3"></p>
+           <p class="text-center data-item" id="city-text4"></p>
+           <p class="text-center data-item" id="city-text5"></p>
+           <p class="text-center data-item" id="city-text6"></p>
+      
+      
+            <div class="row">
+              <div class="col-md-4" id="weather">
+                <img src="" id="weatherImg" class="center-block">
+                <h3 class="text-center data-item" id="weather-text"></h3>
+              </div>
+              <div class="col-md-4" id="temp">
+                <h3 class="text-center" style="font-family:Open Sans;font-size:22px !important;">Температура<br><span style="font-size: 12px;">Кликните по значку погоды,<br> чтобы изменить C на F</span></h3>
+                <h3 class="text-center data-item noselect"><span id="temp-text"></span> <span id="tempMode">C&deg</span></h3>
+              </div>
+              <div class="col-md-4" id="wind">
+                <p class="text-center" style="font-family:Open Sans;font-size:32px !important;color:#81f7e8;">Скорость ветра</p>
+                <p class="text-center data-item" id="wind-text" style="font-family:Open Sans;font-size:26px !important;"></p>
+      <p class="text-center data-item" >или</p>
+                <p class="text-center data-item" id="wind-text2" style="font-family:Open Sans;font-size:26px !important;"></p>
+      <p class="text-center" style="font-family:Open Sans;font-size:32px !important;color:#81f7e8;">Направление ветра</p>
+                <p class="text-center data-item" id="wind-text5" style="font-family:Open Sans;font-size:26px !important;"></p>
+              </div>
+       <div class="col-md-4" id="pressure">
+                <p class="text-center" style="font-family:Open Sans;font-size:32px !important;color:#81f7e8;">Атмосферное давление</p>
+                <p class="text-center data-item" id="wind-text3" style="font-family:Open Sans;font-size:26px !important;"></p>
+              </div>
+      <div class="col-md-4" id="humidity">
+                <p class="text-center" style="font-family:Open Sans;font-size:32px !important;color:#81f7e8;">Относительная влажность</p>
+                <p class="text-center data-item" id="wind-text4" style="font-family:Open Sans;font-size:26px !important;"></p>
+      
+              </div>
+            </div>
+       
+          </div>
+   
+        
+      </div>
+
+    
+
+  
+  
+
+<!-- ----------------------------------------------------------------------------------------- -->
+<footer>
+ 
+  <div class="container-fluid">
+    <div class="container">
+        <!-- <div class="row"> -->
+            <!-- <header class="col-12 p-0"> -->
+                <h1>World</h1>
+                <!-- <div class="listContent col-12 ">
+                    <div class="papa_sendwich">
+                        <div class="sandwich"></div>
+                        <div class="sandwich"></div>
+                        <div class="sandwich"></div>
+                    </div>
+                    <div class="country"><i class="fas fa-arrow-up"></i>
+                        <h5>UA</h5>
+                    </div> -->
+                    <!-- <div class="news">
+                        <h4 class="main_news"></h4>
+                    </div>
+                     -->
+                    <!-- <div class="sandwich_panel col-12">
+                        <div class="row">
+                            <div class="app">
+                                <div class="dropdown" id="dropdown">
+                                    <div>
+                                        <p>Select Country</p>
+                                    </div>
+                                    <div class="dropdown_label">
+
+                                    </div>
+                                    <ul class="dropdown_menu">
+
+                                        <div class="wrapper"></div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="droppdown">
+                        <a class="btn dropdown-toggle lang" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Обрати тип новин
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a onclick="change('NEWS')" class="dropdown-item" href="#">Новини</a>
+                            <a onclick="change('HEALTH')" class="dropdown-item" href="#">Здоров’я</a>
+                            <a onclick="change('Technology')" class="dropdown-item" href="#">Технології</a>
+                            <a onclick="change('FILMS')" class="dropdown-item" href="#">Кіноіндустрія</a>
+                            <a onclick="change('SPORT')" class="dropdown-item" href="#">ПРО СПОРТ</a>
+                            
+                        </div>
+                    </div> -->
+                    <div class="galery"><div class="img_list"></div></div>
+                </div>
+        </div>
+        </header>
+        <div class="col-12 content d-flex column">
+
+        </div>
+        <footer class="col-12">
+        <img src="img/sun.png">
+
+        </footer>
+
+    </div>
+</div>
+</div>
+</footer>
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+    <script src='https://code.jquery.com/ui/1.11.4/jquery-ui.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src="js/main.js"></script> 
+	
+</body>
+</html>

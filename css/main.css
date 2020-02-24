@@ -1,0 +1,321 @@
+
+	body{
+		background-image: url(../img/sky.jpeg);
+		background-repeat: repeat;
+		background-size: 110%;
+    }
+    head{
+        height: 10px;
+    }
+	#clock{
+		font-family: 'Indie Flower', cursive;
+		font-size:20px;
+		font-weight:bold;
+		color:#c9cc00;	
+		
+	  }
+	  #text{
+		font-family: 'Indie Flower', cursive;
+		color: #c9cc00;
+	  }
+
+	  #wind, #temp, #weather, #pressure, #humidity  {
+	  border:1px solid #b6f7ab;
+	  border-radius: 2px;
+	  padding:5px;
+	  }
+	  .data-item {
+		color: #181ce0;
+	  }
+	  .jumbotron {
+	  text-align:center;
+	/* background-image: url(../img/weather.jpg); */
+	/* background-repeat: no-repeat;
+	background-position-x: center; */
+	background: radial-gradient(ellipse at top, #6482e6, transparent),
+				  radial-gradient(ellipse at bottom, #0c9f7f, transparent);
+		color: rgb(30, 139, 228);
+	width: 450px;
+	margin-left: 800px;
+	  }
+	
+	  .well {
+		background: radial-gradient(ellipse at top, #6482e6, transparent),
+				  radial-gradient(ellipse at bottom,  #0c9f7f, transparent);
+		color: rgb(17, 21, 223);
+		margin-left: 10px;
+	width: 900px;}
+	  
+	  .row, .jumbotron {
+	  border-radius:4px;
+	  box-shadow: 0 0 150px rgba(0,0,0,0.5);
+	  padding: 2%;
+		 margin-left: 15px;
+	  }
+	  
+	  .copyright {
+		color: #222;
+	  }
+	  
+	  .noselect {
+		-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none;   /* Chrome/Safari/Opera */
+		-khtml-user-select: none;    /* Konqueror */
+		-moz-user-select: none;      /* Firefox */
+		-ms-user-select: none;       /* IE/Edge */
+		user-select: none;           /* non-prefixed version, currently
+										not supported by any browser */
+	  }
+	  
+	  #tempMode {
+		cursor: pointer;
+	  }
+	 
+	  
+	h1{
+		font-size: xx-large;
+		font-style: italic;
+		font-family: unset;
+		text-shadow: yellow 0 0 10px; /* Свечение голубого цвета */
+    color: #085170;
+	}
+	.btn{
+		margin-left: 800px;
+	}
+	.form-control{
+		margin-left: 800px;
+	}
+
+.dropdown{
+	display: flex;
+	flex-direction: column;
+}
+.btn1{margin-left: 378px;
+margin-right: 378px;}
+.btn2{margin-left: 478px;
+	margin-right: 478px;}
+.btn3{margin-left: 578px;
+	margin-right: 578px;}
+.btn4{margin-left: 678px;
+	margin-right: 678px;}
+.btn5{margin-left: 778px;
+	margin-right: 778px
+}
+p{color: #181ce0;}
+
+
+
+
+/*-----------------------*/
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.app {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background: -webkit-linear-gradient(right, rgba(73, 210, 235, 0.356) 0%, rgba(76, 20, 139, 0.616) 100%);
+    
+}
+
+.dropdown {
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+}
+
+.dropdown.open .dropdown_menu {
+    display: block;
+}
+
+.dropdown_label {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 47, 255);
+    width: 100%;
+    cursor: pointer;
+    color: rgb(217, 223, 240);
+}
+
+.dropdown_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    border-radius: 5px;
+    border: solid 2px rgb(0, 47, 255);
+    position: absolute;
+    width: 100%;
+    top: 76px;
+    text-align: center;
+    padding: 10px 0;
+    color: rgb(217, 223, 240);
+    background-color: black;
+}
+
+.dropdown_menu li {
+    padding: 5px 10px;
+}
+
+.dropdown_menu li:hover {
+    background: -webkit-linear-gradient(right, rgb(148, 177, 232) 0%, rgb(12, 86, 246) 77%, rgb(2, 64, 179) 100%);
+
+
+    cursor: pointer;
+    color: rgb(217, 223, 240);
+}
+
+p {
+    color: rgb(80, 112, 255);
+    padding-left: 10px;
+}
+
+.droppdown {
+    position: relative;
+    right: 0px;
+    background: -webkit-linear-gradient(right, rgb(148, 177, 232) 0%, rgb(12, 86, 246) 77%, rgb(2, 64, 179) 100%);
+
+    height: 35px;
+}
+
+.lang {
+    position: absolute;
+    right: 10px;
+    top: -588px;
+    z-index: 1;
+    font-size: 22px;
+    color: rgb(217, 223, 240);
+}
+
+.dropdown-item {
+    background: -webkit-linear-gradient(right, rgb(148, 177, 232) 0%, rgb(12, 86, 246) 77%, rgb(2, 64, 179) 100%);
+
+    color: rgb(217, 223, 240);
+    width: 147%;
+}
+
+.show {
+    padding: 0;
+
+}
+
+label {
+    color: rgb(217, 223, 240);
+}
+
+
+.news {
+    text-align: center;
+    color: rgb(217, 223, 240);
+    position: absolute;
+    top: 85px;
+    right: 522px;
+    z-index: 1;
+    opacity: 0.5;
+    transition: all 500ms;
+}
+
+.news:hover {
+    opacity: 1;
+}
+
+h5 {
+    text-transform: uppercase;
+    color: rgb(217, 223, 240);
+}
+
+.country .news {
+    position: absolute;
+}
+
+.country {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 7px;
+    opacity: 0.5;
+    transition: all 500ms;
+}
+
+.country:hover {
+    opacity: 1;
+}
+
+.SinoptikInformer {
+    width: 240px;
+}
+
+#video-bg {
+    position: relative;
+}
+
+.droppdown {
+    height: 0px;
+}
+
+.fa-arrow-up {
+    color: rgb(71, 71, 253);
+    font-size: 24px;
+}
+.galery
+{
+    width: 95%;
+    height: 350px;
+    position: absolute;
+    bottom: 305px;
+    left: 30px;
+    display: flex;
+    flex-flow: row;
+    overflow: hidden;
+    z-index: 2;
+}
+.galery_img{
+    height: 200px;
+    margin: 15px;
+    position: relative;
+    left: 0px;
+}.img_list{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    transition: all 3000ms;
+}
+
+main{
+    background-image: url(../img/fon2.jpg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+footer{
+    background-image: url(../img/fon2.jpg);
+    text-align: center;
+}
+.card{
+    width: 850px;
+}
+.galery_img{
+    display: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+	  /* ///--------------------------------------------- */
+	  
